@@ -1,15 +1,15 @@
 # general
-*.log
-*.gz
-*.jar
-movie-api/logs
+#*.log
+#*.gz
+#*.jar
+#movie-api/logs
 
 
 #jar
-movie-api/target
-movie-core/target
+#movie-api/target
+#movie-core/target
 
 
 #jooq
-movie-core/src/main/java/com/model/generated
+#movie-core/src/main/java/com/model/generated
 

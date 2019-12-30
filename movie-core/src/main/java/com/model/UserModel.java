@@ -2,7 +2,6 @@ package com.model;
 
 import com.utils.time.Clock;
 import com.model.base.BaseModel;
-import com.model.generated.Tables;
 import com.model.generated.tables.User;
 import com.model.generated.tables.records.UserRecord;
 import org.springframework.stereotype.Component;
