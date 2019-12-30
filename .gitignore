@@ -3,6 +3,8 @@
 *.gz
 *.jar
 *.class
+.idea
+.DS_Store
 movie-api/logs
 
 
