@@ -1,0 +1,13 @@
+2019-12-30 12:09:07,923 [main] luoyingyundeMacBook-Pro.local INFO c.m.a.MovieApiApplication - - Starting MovieApiApplication v0.0.1-SNAPSHOT on luoyingyundeMacBook-Pro.local with PID 68907 (/Users/luoyingyun/code/movie/movie-api/target/movie-api.jar started by luoyingyun in /Users/luoyingyun/code/movie/movie-api/target)
+2019-12-30 12:09:07,926 [main] luoyingyundeMacBook-Pro.local INFO c.m.a.MovieApiApplication - - No active profile set, falling back to default profiles: default
+2019-12-30 12:09:12,052 [main] luoyingyundeMacBook-Pro.local INFO c.m.a.MovieApiApplication - - Started MovieApiApplication in 4.453 seconds (JVM running for 5.111)
+2019-12-30 12:09:27,695 [http-nio-8080-exec-2] luoyingyundeMacBook-Pro.local INFO c.u.f.MethodLoggingFilter - - [ REQUEST START ]
+2019-12-30 12:09:27,703 [http-nio-8080-exec-2] luoyingyundeMacBook-Pro.local INFO c.u.f.MethodLoggingFilter - - [ REQUEST ] 0:0:0:0:0:0:0:1:62401 POST /home/register Headers: { content-type:[application/json],user-agent:[PostmanRuntime/7.17.1],accept:[*/*],cache-control:[no-cache],postman-token:[ae96f783-a9da-4f67-9314-f16367a8c868],host:[localhost:8080],accept-encoding:[gzip, deflate],content-length:[47],connection:[keep-alive], } Payload: {"name":"yyLuo1114","mobile":"15657581114"}
+2019-12-30 12:09:27,791 [http-nio-8080-exec-2] luoyingyundeMacBook-Pro.local INFO c.m.service.UserService - - find mobile = 15657581114
+2019-12-30 12:09:28,161 [http-nio-8080-exec-2] luoyingyundeMacBook-Pro.local INFO c.u.f.MethodLoggingFilter - - [ RESPONSE ] 200 Payload: 当前手机号已被注册啦～注册人为yyLuo1114
+2019-12-30 12:09:28,161 [http-nio-8080-exec-2] luoyingyundeMacBook-Pro.local INFO c.u.f.MethodLoggingFilter - - [ REQUEST END ]
+2019-12-30 12:09:37,185 [http-nio-8080-exec-3] luoyingyundeMacBook-Pro.local INFO c.u.f.MethodLoggingFilter - - [ REQUEST START ]
+2019-12-30 12:09:37,201 [http-nio-8080-exec-3] luoyingyundeMacBook-Pro.local INFO c.u.f.MethodLoggingFilter - - [ REQUEST ] 0:0:0:0:0:0:0:1:62401 GET /home/hello Headers: { user-agent:[PostmanRuntime/7.17.1],accept:[*/*],cache-control:[no-cache],postman-token:[7ec9504d-a286-40f4-968c-f116dfddab84],host:[localhost:8080],accept-encoding:[gzip, deflate],connection:[keep-alive], } Payload: {}
+2019-12-30 12:09:37,203 [http-nio-8080-exec-3] luoyingyundeMacBook-Pro.local INFO c.m.a.c.HelloController - - hello world every one!
+2019-12-30 12:09:37,205 [http-nio-8080-exec-3] luoyingyundeMacBook-Pro.local INFO c.u.f.MethodLoggingFilter - - [ RESPONSE ] 200 Payload: Hello World
+2019-12-30 12:09:37,205 [http-nio-8080-exec-3] luoyingyundeMacBook-Pro.local INFO c.u.f.MethodLoggingFilter - - [ REQUEST END ]
