@@ -4,7 +4,7 @@
 *.jar
 *.class
 .idea
-.DS_Store
+*.DS_Store
 movie-api/logs
 
 
