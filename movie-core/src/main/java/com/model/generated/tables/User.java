@@ -35,7 +35,7 @@ import org.jooq.impl.TableImpl;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class User extends TableImpl<UserRecord> {
 
-    private static final long serialVersionUID = -1705079443;
+    private static final long serialVersionUID = 315534558;
 
     /**
      * The reference instance of <code>user</code>
@@ -64,6 +64,11 @@ public class User extends TableImpl<UserRecord> {
      * The column <code>user.MOBILE</code>.
      */
     public final TableField<UserRecord, String> MOBILE = createField("MOBILE", org.jooq.impl.SQLDataType.VARCHAR.length(20), this, "");
+
+    /**
+     * The column <code>user.PASSWORD</code>.
+     */
+    public final TableField<UserRecord, String> PASSWORD = createField("PASSWORD", org.jooq.impl.SQLDataType.VARCHAR.length(70), this, "");
 
     /**
      * The column <code>user.TIME_CREATED</code>.

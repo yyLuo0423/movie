@@ -1,6 +1,6 @@
 package com.model;
 
-import com.movie.util.Clock;
+import com.utils.time.Clock;
 import com.model.base.BaseModel;
 import com.model.generated.Tables;
 import com.model.generated.tables.User;

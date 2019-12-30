@@ -1,6 +1,6 @@
 package com.model.base;
 
-import com.movie.util.Clock;
+import com.utils.time.Clock;
 import lombok.Getter;
 
 import java.util.UUID;

@@ -14,9 +14,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>wxdemo</artifactId>
+    <artifactId>movie2019</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>wxdemo</name>
+    <name>movie2019</name>
     <description>Demo project for Spring Boot</description>
 
 

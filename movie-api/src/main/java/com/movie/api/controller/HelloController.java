@@ -1,9 +1,9 @@
 package com.movie.api.controller;
 
 import com.movie.api.request.UserRegisterRequest;
-import com.movie.service.UserService;
-import com.movie.service.vo.UserVO;
-import com.movie.util.validator.MobileNumberValidator;
+import com.service.user.UserService;
+import com.service.vo.UserVO;
+import com.utils.validator.MobileNumberValidator;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
