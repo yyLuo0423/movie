@@ -13,16 +13,13 @@ public class UserService {
   @Autowired
   private UserModel userModel;
 
-  public UserVO register(String mobile, String name) {
-    return UserVO.from(userModel.init(mobile, name));
+  public UserVO register(String mobile, String name, String pwd) {
+    return UserVO.from(userModel.init(mobile, name, pwd));
   }
 
   public UserVO findByMobile(String mobile) {
-    log.info("find mobile = {}", mobile);
     UserRecord userRecord = userModel.findByMobileNumber(mobile);
-    if(userRecord == null){
-      log.error("user is null");
-    }
+    log.info("find mobile = {}, match = {}", mobile, userRecord != null);
     return UserVO.from(userRecord);
   }
 }

@@ -5,6 +5,7 @@ import com.service.user.UserService;
 import com.service.vo.UserVO;
 import com.utils.validator.MobileNumberValidator;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,15 +31,19 @@ public class HelloController {
   public String register(@RequestBody UserRegisterRequest request) {
     String mobileNumber = MobileNumberValidator.validate(request.mobile);
     if (mobileNumber == null) {
-      return "注册失败";
+      return "注册失败, 手机号不合法";
+    }
+
+    if (StringUtils.isBlank(request.password)) {
+      return "注册失败, 密码不能为空";
     }
 
     UserVO userVO = userService.findByMobile(mobileNumber);
     if (userVO != null) {
-      return "当前手机号已被注册啦～注册人为" + userVO.name;
+      return "当前手机号已被注册啦～请直接登陆";
     }
 
-    UserVO registerUser = userService.register(mobileNumber, request.name);
+    UserVO registerUser = userService.register(mobileNumber, request.name, request.password);
     return "注册成功，欢迎您，" + registerUser.name;
   }
 }

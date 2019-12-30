@@ -1,5 +1,6 @@
 package com.model;
 
+import com.model.generated.Tables;
 import com.utils.time.Clock;
 import com.model.base.BaseModel;
 import com.model.generated.tables.User;
@@ -10,10 +11,11 @@ import org.springframework.stereotype.Component;
 public class UserModel extends BaseModel {
   private static User table = Tables.USER;
 
-  public UserRecord init(String mobile, String name) {
+  public UserRecord init(String mobile, String name, String pwd) {
     UserRecord record = create().newRecord(table);
     record.setName(name);
     record.setMobile(mobile);
+    record.setPassword(pwd);
     record.setTimeCreated(Clock.now());
     record.setTimeUpdated(Clock.now());
     record.insert();

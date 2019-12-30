@@ -2,6 +2,7 @@
 *.log
 *.gz
 *.jar
+*.class
 movie-api/logs
 
 
