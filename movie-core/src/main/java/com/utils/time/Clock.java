@@ -1,4 +1,4 @@
-package com.movie.util;
+package com.utils.time;
 
 import org.joda.time.*;
 import org.joda.time.format.DateTimeFormat;

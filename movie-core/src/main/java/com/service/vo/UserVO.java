@@ -1,4 +1,4 @@
-package com.movie.service.vo;
+package com.service.vo;
 
 import lombok.Data;
 import com.model.generated.tables.records.UserRecord;

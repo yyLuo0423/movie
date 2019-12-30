@@ -1,4 +1,4 @@
-package com.movie.config;
+package com.config;
 
 import org.springframework.stereotype.Component;
 

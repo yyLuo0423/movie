@@ -1,4 +1,4 @@
-package com.movie.config;
+package com.config;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.flywaydb.core.Flyway;
@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 import java.util.Arrays;
 
 @Configuration
-@ComponentScan("com.wxcore.com.model.generated")
+@ComponentScan("com.model.generated")
 @EnableTransactionManagement
 @PropertySource("classpath:application.properties")
 public class JooqConfig {
@@ -24,7 +24,7 @@ public class JooqConfig {
   public DataSource dataSource() {
     BasicDataSource dataSource = new BasicDataSource();
 
-    dataSource.setUrl("jdbc:mysql://localhost:3306/wxdemo");
+    dataSource.setUrl("jdbc:mysql://localhost:3306/movie");
     dataSource.setUsername("root");
     dataSource.setPassword("");
     dataSource.setConnectionInitSqls(Arrays.asList("set names utf8mb4;"));
@@ -62,7 +62,7 @@ public class JooqConfig {
   Flyway flyway() {
     Flyway flyway = new Flyway();
     flyway.setBaselineOnMigrate(true);
-    flyway.setDataSource("jdbc:mysql://localhost:3306/wxdemo", "root", "");
+    flyway.setDataSource("jdbc:mysql://localhost:3306/movie", "root", "");
     return flyway;
   }
 }

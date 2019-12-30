@@ -1,6 +1,6 @@
-package com.movie.service;
+package com.service.user;
 
-import com.movie.service.vo.UserVO;
+import com.service.vo.UserVO;
 import lombok.extern.slf4j.Slf4j;
 import com.model.UserModel;
 import com.model.generated.tables.records.UserRecord;

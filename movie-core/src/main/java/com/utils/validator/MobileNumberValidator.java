@@ -1,4 +1,4 @@
-package com.movie.util.validator;
+package com.utils.validator;
 
 import org.apache.commons.lang3.StringUtils;
 
